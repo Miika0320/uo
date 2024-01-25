@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>eHotel</title>
+    <link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">eHotel Management System</a>
+    
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id ="navbarNav">
+                <ul class = "navbar-nav">
+    
+                    <li class=""nav-item active>
+                        <a href="hotels.html" class="nav-link text-white">
+                            Book a Room
+                        </a>
+                    </li>
+    
+                    <li class=""nav-item active>
+                        <a href="hotelchains.html" class="nav-link text-white">
+                            View Reservations
+                        </a>
+                    </li>
+    
+    
+        
+    
+                </ul>
+               
+            </div>
+    
+          <!-- <li class="nav-item">
+            <a class="nav-link" th:href="@{/students}">Hotel Chain Management</a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" th:href="@{/students}">Teacher Management</a>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- room option grid -->
+  
+    <div class="container py-4">
+        <h1>My Reservations:</h1>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 py-3">
+                <div class="card">
+                    <img src="https://64.media.tumblr.com/f349f32548f60e8651107917701b2af1/tumblr_inline_nstag7Ruzy1r02mf8_1280.jpg" alt="Room 1" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Room 1</h5>
+                        <p class="card-text">This room has two Queen sized beds and perfect for farting in.<br> <br class="fw-bold">Cost: 50$/night <br>Date: May 5th 2023</p>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 py-3">
+                <div class="card">
+                    <img src="https://www.mymove.com/wp-content/uploads/2013/08/GettyImages-1204811865-scaled.jpg" alt="defense" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Room 2</h5>
+                        <p class="card-text">This room has a King sized bed. Has a mini-fridge with complementary snacks.<br> <br>Cost: 50$/night <br>Date: May 5th 2023 </p>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 py-3">
+                <div class="card">
+                    <img src="https://64.media.tumblr.com/9eb93c776f8c8c3a0497912b3994d30c/tumblr_inline_nsta49k1Ip1r02mf8_1280.jpg" alt="position" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Room 3</h5>
+                        <p class="card-text">This room has a Queen sized bed and is perfect for solo-travelers. <br> <br>Cost: 30$/ night <br>Date: May 5th 2023</p>
+ 
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 py-3">
+                <div class="card">
+                    <img src="https://media.timeout.com/images/105681599/750/422/image.jpg" alt="serves" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Room 4</h5>
+                        <p class="card-text">This room has a Double sized bed with a pull-out couch. Perfect for couples, small families or a group of friends on a memorable trip.<br> <br>Cost: 20$/night <br>Date: May 5th 2023</p>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 py-3">
+                <div class="card">
+                    <img src="https://media.cntraveler.com/photos/5c900d04913b993bce04adbe/master/w_4000,h_2667,c_limit/The-Calile-Hotel_2019_TheCalile_OTA_Rooms_002_HIGH-RES_CityViewRoom.jpg" alt="team building" class="card-img-top"> 
+                    <div class="card-body">
+                        <h5 class="card-title">Room 5</h5>
+                        <p class="card-text">This room has a Double sized bed with a kitchenette and a small bathroom.  <br> <br>Cost: 60$/night <br>Date: May 5th 2023</p>
+                      
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-6 col-lg-4 py-3">
+                <div class="card">
+                    <img src="https://www.sbid.org/wp-content/uploads/2022/10/CHIL-Interior-Design-Karsh-Suite-at-Fairmont-1.jpg" alt="Offense" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Room 6</h5>
+                        <p class="card-text">This room has a King sized bed with a large bathroom and mini-fridge. <br> <br>Cost: 100$/night <br>Date: May 5th 2023</p>
+
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>       
+
+
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <title>eHotel</title>
+    <link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">eHotel Management System</a>
+    
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+       
+            <div class="collapse navbar-collapse" id ="navbarNav">
+                <ul class = "navbar-nav">
+    
+                    <li class=""nav-item active>
+                        <a href="rooms" class="nav-link text-white">
+                            Book a Room
+                        </a>
+                    </li>
+
+                    <li class=""nav-item active>
+                        <a href="bookings" class="nav-link text-white">
+                            View Bookings
+                        </a>
+                    </li>
+    
+                    <li class=""nav-item active>
+                        <a href="rentings" class="nav-link text-white">
+                            Paid Reservations
+                        </a>
+                    </li>
+
+                    <li class=""nav-item active>
+                        <a href="customers" class="nav-link text-white">
+                            View Customer Accounts
+                        </a>
+                    </li>
+    
+                    <li class=""nav-item active>
+                        <a href="employees" class="nav-link text-white">
+                            View Employee Accounts
+                        </a>
+                    </li>
+    
+        
+    
+                </ul>
+               
+            </div>
+        
+        </ul>
+      </div>
+    </nav>
+
+        <!-- customer option grid -->
+  
+        <div class="container py-4">
+            <h1>Customer Accounts:</h1>
+            <div class = "row">
+                
+                <a th:href = "@{/createCustomer}"
+                class = "btn btn-primary">create</a>
+            </div>
+        
+           
+        </div>      
+
+            
+            <table class = "table table-striped table-bordered">
+                <thead class = "table-dark">
+                    <tr>
+                        <th> Name </th>
+                        <th> Address </th>
+                        <th> Registration Date </th>
+                        <th> Sin</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr th:each = "customer: ${customer}">
+                        <td th:text = "${customer.name}"></td>
+                        <td th:text = "${customer.address}"></td>
+                        <td th:text = "${customer.registration_date}"></td>
+                        <td th:text = "${customer.sin}"></td>
+                        <td>
+                           
+                            <a th:href = "@{/editCustomer/{customer_id}(customer_id=${customer.customer_id})}"
+                             class = "btn btn-primary">Update</a>
+                            <a th:href = "@{/customers/{customer_id}(customer_id=${customer.customer_id})}"
+                             class = "btn btn-danger">Delete</a>
+         
+                            
+                         
+                             
+                        </td>
+                      
+                    </tr>
+                   
+           
+                
+                </tbody>
+              
+    
+            </table>
+    
+ 
+
+
+    </body>
+
+
+</html>

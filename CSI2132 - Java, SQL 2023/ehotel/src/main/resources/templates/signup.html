@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>customer register page</title>
+<script>
+
+	function validate() {
+		var custSSN = document.getElementById("custSSN");
+		var custName = document.getElementById("custName");
+		var custPwd = document.getElementById("custPwd");
+		var custPwdagain = document.getElementById("custPwdagain");
+    var custemail = document.getElementById("custemail");
+		if(custSSN.value == "" || custName.value == "" || custPwd.value == "" || custPwdagain.value == "" ){
+			alert("You need to fill all the information");
+			return false;
+		}
+
+		
+		else if(custPwd.value != custPwdagain.value){
+			alert("passwords need to be same");
+			return false;
+		}
+		else
+			return true;
+	}
+
+</script>
+</head>
+<body>
+<form method = "post" action="hotels.html">
+please input your SSN:<input type="text" id="custSSN" name="custSSN"><br><br>
+please input your name:<input type="text" id="custName" name="custName"><br><br>
+please input your password:<input type="password" id="custPwd" name="custPwd"><br><br>
+please input your password again:<input type="password" id="custPwdagain" name="custPwdagain"><br><br>
+please input your email address:<input type="emailaddress" id="custemail" name="custemail"><br><br>
+<button type="submit" value="submit" onclick="return validate();">submit</button>
+<button type="reset" value="reset">reset</button>
+</form>
+
+</body>
+</html>

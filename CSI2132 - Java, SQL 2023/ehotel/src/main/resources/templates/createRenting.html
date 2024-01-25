@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <title>eHotel</title>
+    <link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="card" style="width: 100rem;">
+      <h1>Add Rental: </h1>
+      <div class="card-body">
+
+    <form th:action="@{/rentings}" th:object= "${renting}" method="POST">
+
+
+      <div class="form-group">
+        <label for="hotel_id">Hotel ID</label>
+        <input type="number" class="form-control" th:field="*{hotel_id}" placeholder="Enter hotel id">
+      </div>
+
+      <div class="form-group">
+        <label for="room_id">Room ID</label>
+        <input type="number" class="form-control" th:field="*{room_id}" placeholder="Enter room id">
+      </div>
+
+      <div class="form-group">
+        <label for="customer_id">Customer ID</label>
+        <input type="number" class="form-control" th:field="*{customer_id}" placeholder="Enter customer id">
+      </div>
+
+      <div class="form-group">
+        <label for="date_in">Date In</label>
+        <input type="date" class="form-control" th:field="*{date_in}" placeholder="Date In">
+      </div>
+
+      <div class="form-group">
+        <label for="date_out">Date Out</label>
+        <input type="date" class="form-control" th:field="*{date_out}" placeholder="Date Out">
+      </div>
+
+
+      <div class="form-group">
+        <label for="payment">Extendability</label>
+        <input type="number" class="form-control" th:field="*{payment}" placeholder="Enter payment">
+      </div>
+
+
+     
+  
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+  </div>
+</body>
+</html>

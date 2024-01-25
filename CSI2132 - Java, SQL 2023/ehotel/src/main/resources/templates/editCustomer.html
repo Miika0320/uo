@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <title>eHotel</title>
+    <link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="card" style="width: 100rem;">
+      <h1>Edit customer: </h1>
+      <div class="card-body">
+
+    <form th:action="@{/customers/{customer_id} (customer_id=${customer.customer_id})}" th:object= "${customer}" method="POST">
+
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" th:field="*{name}" placeholder="Enter full name">
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" class="form-control" th:field="*{address}" placeholder="Enter address">
+      </div>
+
+      <div class="form-group">
+        <label for="registration_date">Registration Date</label>
+        <input type="date" class="form-control" th:field="*{registration_date}" placeholder="Enter Registration Date">
+      </div>
+
+      <div class="form-group">
+        <label for="sin">Social Insurance Number</label>
+        <input type="number" class="form-control" th:field="*{sin}" placeholder="Social Insurance Number">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" th:field="*{password}" placeholder="Password">
+      </div>
+
+
+     
+  
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+  </div>
+</body>
+</html>
