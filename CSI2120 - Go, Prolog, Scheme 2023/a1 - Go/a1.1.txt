@@ -1,0 +1,48 @@
+// Mikaela Dobie 300164161 Q1
+package main
+
+import (
+	"fmt"
+	"math"
+	"os"
+)
+
+type Point struct {
+	x float64
+	y float64
+}
+
+func main() {
+	quit := make(chan bool, 1)
+
+	for {
+		select {
+		case <-quit:
+		fmt.Printf("\n Program Terminated")
+			os.Exit(0)
+		default:
+			points := []Point{{8., 1.}, {3., 2.}, {7., 4.}, {6., 3.}}
+			fmt.Printf("point= %v\n", points[2])
+
+			for i := 0; i <= 3; i++ {
+				for j := 0; j <= 3; j++ {
+					MidPoint(points[i], points[j])
+					if i == 3&&j==3 {
+					quit <- true
+				}
+				}
+				
+			}
+		}
+	}
+
+}
+
+func MidPoint(a Point, b Point) {
+	x := float64(a.x + b.x/2)
+	y := float64(a.y + b.y/2)
+	c := Point{x, y}
+	fmt.Printf("\n Midpoint = %v\n", c)
+	d := float64(math.Sqrt(math.Pow((b.y-a.y), 2) + math.Pow((b.x-a.x), 2)))
+	fmt.Printf("Length of the line: %.2f", d)
+}

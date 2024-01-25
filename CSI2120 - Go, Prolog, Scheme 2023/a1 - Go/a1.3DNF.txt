@@ -1,0 +1,59 @@
+// Mikaela Dobie 300164161 Q3
+package main
+
+import (
+	"fmt"
+	"math/rand"
+	"sync"
+)
+
+func RandomGenerator(wg *sync.WaitGroup, stop <-chan bool, m int) <-chan int {
+	intStream := make(chan int)
+	go func() {
+		defer func() { wg.Done() }()
+		defer close(intStream)
+		for {
+			select {
+			case <-stop:
+				return
+			case intStream <- rand.Intn(1000000) * m:
+			}
+		}
+	}()
+	return intStream
+}
+
+func main() {
+	five := []int{}
+	thirteen := []int{}
+	ninety7 := []int{}
+	var x int
+	for 100 {
+		select {
+		case x = RandomGenerator(*sync.WaitGroup, false, 5):
+			if Multiple(x, 5) {
+				five = append(five, x)
+			}
+		case x = RandomGenerator(*sync.WaitGroup, false, 13):
+			if Multiple(x, 13) {
+				thirteen = append(thirteen, x)
+			}
+		case x = RandomGenerator(*sync.WaitGroup, false, 97):
+			if Multiple(x, 97) {
+				ninety7 = append(ninety7, x)
+			}
+		}
+	}
+	fmt.Printf("Number mod 5 \n", five)
+	fmt.Printf("Number mod 13 \n", thirteen)
+	fmt.Printf("Number mod 97 \n", ninety7)
+
+}
+
+func Multiple(x int, m int) bool {
+	if x%m == 0 {
+		return true
+	} else {
+		return false
+	}
+}
