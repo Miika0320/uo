@@ -1,0 +1,116 @@
+==== RESTART: C:\Users\mikae\Desktop\a4_part1_300164161\a4_part1_300164161.py ===
+Would you like to:
+1. Analize anagrams in a text -- given in a file
+2. Get small help for Scrabble game
+Enter any character other than 1 or 2 to exit: 
+1
+Enter the name of the file: small.txt
+
+Of all the words in your file, the following words have the most anagrams:
+['cater', 'crate', 'react', 'trace']
+Anagrams of cater are: ['caret', 'crate', 'react', 'recta', 'trace']
+Anagrams of crate are: ['caret', 'cater', 'react', 'recta', 'trace']
+Anagrams of react are: ['caret', 'cater', 'crate', 'recta', 'trace']
+Anagrams of trace are: ['caret', 'cater', 'crate', 'react', 'recta']
+
+These are the words in your file that have no anagrams:
+['beyond', 'boat', 'lawn']
+
+Suppose you would like to know if there is a word in your file that has exactly k anagrams
+Enter an integer for k: 2
+Here is/are the word(s) in your file with exactly 2 anagrams
+['acre', 'care', 'list', 'race', 'silt', 'slit']
+>>> 
+==== RESTART: C:\Users\mikae\Desktop\a4_part1_300164161\a4_part1_300164161.py ===
+Would you like to:
+1. Analize anagrams in a text -- given in a file
+2. Get small help for Scrabble game
+Enter any character other than 1 or 2 to exit: 
+1
+Enter the name of the file: smallish.txt
+
+Of all the words in your file, the following words have the most anagrams:
+['time']
+Anagrams of time are: ['emit', 'item', 'mite']
+
+These are the words in your file that have no anagrams:
+['', 'ASAP', 'Australias', 'Barrier', 'Great', 'Reef', 'Scientists', 'There', 'a', 'all', 'by', 'change', 'climate', 'corals', 'decline', 'decrease', 'driven', 'due', 'emissions', 'found', 'greenhouse', 'had', 'half', 'is', 'more', 'of', 'researchers', 'seas', 'sharply', 'since', 'suffered', 'than', 'the', 'to', 'types', 'we']
+
+Suppose you would like to know if there is a word in your file that has exactly k anagrams
+Enter an integer for k: 2
+Here is/are the word(s) in your file with exactly 2 anagrams
+['lose', 'lost']
+>>> 
+==== RESTART: C:\Users\mikae\Desktop\a4_part1_300164161\a4_part1_300164161.py ===
+Would you like to:
+1. Analize anagrams in a text -- given in a file
+2. Get small help for Scrabble game
+Enter any character other than 1 or 2 to exit: 
+2
+Enter the letters that you have, one after another with no space:    shwala
+Error: You entered space(s).
+Enter the letters that you have, one after another with no space: nopelol
+Would you like help forming a word with:
+1. all of these letters
+2. all but one of these letters
+1
+There are no words comprised of exactly these letters
+>>> 
+==== RESTART: C:\Users\mikae\Desktop\a4_part1_300164161\a4_part1_300164161.py ===
+Would you like to:
+1. Analize anagrams in a text -- given in a file
+2. Get small help for Scrabble game
+Enter any character other than 1 or 2 to exit: 
+2
+Enter the letters that you have, one after another with no space: aijsycn
+Would you like help forming a word with:
+1. all of these letters
+2. all but one of these letters
+2
+The letters you gave us are:  aijsycn
+Let's see what we can get if we ommit one of these letters.
+Without the letter in position 1 we have letters ijsycn
+There is no word comprised of letters: ijsycn
+Without the letter in position 2 we have letters ajsycn
+There is no word comprised of letters: ajsycn
+Without the letter in position 3 we have letters aisycn
+There is no word comprised of letters: aisycn
+Without the letter in position 4 we have letters aijycn
+There is no word comprised of letters: aijycn
+Without the letter in position 5 we have letters aijscn
+There is no word comprised of letters: aijscn
+Without the letter in position 6 we have letters aijsyn
+There is no word comprised of letters: aijsyn
+Without the letter in position 7 we have letters aijsyc
+There is no word comprised of letters: aijsyc
+>>> 
+>>>
+>>>
+>>> wordbook[10000 : 10010]
+['disembodiment', 'disembody', 'disembowel', 'disembowelment', 'disenchant', 'disenchanted', 'disenchantment', 'disencumber', 'disenfranchise', 'disenfranchised']
+>>> 
+>>> test_letters("listen", "enlist")
+True
+>>> test_letters("teen", "need")
+False
+>>> 
+>>> create_clean_sorted_nodupicates_list("Anti-viral drug remdesivir has little to no effect on Covid patients' chances of survival, a study from the World Health Organization (WHO) has found.")
+['Antiviral', 'Covid', 'Health', 'Organization', 'WHO', 'World', 'a', 'chances', 'drug', 'effect', 'found', 'from', 'has', 'little', 'no', 'of', 'on', 'patients', 'remdesivir', 'study', 'survival', 'the', 'to']
+>>> 
+>>> word_anagrams("bla", wordbook)
+['alb', 'lab']
+>>>
+>>> 
+>>> l
+['able', 'acre', 'bale', 'beyond', 'binary', 'boat', 'brainy', 'care', 'cat', 'cater', 'crate', 'lawn', 'list', 'race', 'react', 'sheet', 'silt', 'slit', 'trace']
+>>> anagcount
+[1, 2, 1, 0, 1, 0, 1, 2, 1, 5, 5, 0, 2, 2, 5, 1, 2, 2, 5]
+>>> count_anagrams(l, wordbook)
+[1, 2, 1, 0, 1, 0, 1, 2, 1, 5, 5, 0, 2, 2, 5, 1, 2, 2, 5]
+>>> k_anagram(l, anagcount, 2)
+['acre', 'care', 'list', 'race', 'silt', 'slit']
+>>> max_anagram(l, anagcount)
+['cater', 'crate', 'react', 'trace']
+>>> zero_anagram(l, anagcount)
+['beyond', 'boat', 'lawn']
+>>> 

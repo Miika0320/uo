@@ -1,0 +1,24 @@
+Enter A or B to choose one of the following two options:
+
+A: Would work with numbers?
+B: Would like to replace a pattern with stars?
+
+Enter A or B (lower or upper case accepted): v
+Invalid entry
+Enter A or B (lower or upper case accepted): b
+Enter a string: abcs
+Enter a non-empty pattern string: abc
+Here is a result of replacing pattern abc in abcs with some stars:
+*s
+>>> 
+========================================================== RESTART: C:\Users\mikae\Desktop\test2_300164161.py =========================================================
+Enter A or B to choose one of the following two options:
+
+A: Would work with numbers?
+B: Would like to replace a pattern with stars?
+
+Enter A or B (lower or upper case accepted): a
+Enter a sequence of integers separated by either one space or a comma then one space.
+1, 4, 8
+You entered: 1, 4, 8
+The given list of ints is ['1', '4', '8']

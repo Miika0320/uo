@@ -1,0 +1,226 @@
+
+RUN 1
+
+Would you like to:
+1. Analize anagrams in a text -- given in a file
+2. Get small help for Scrabble game
+Enter any character other than 1 or 2 to exit: 
+1
+Enter the name of the file: small.txt
+
+Of all the words in your file, the following words have the most anagrams:
+['cater', 'crate', 'react', 'trace']
+
+Here are their anagrams:
+Anagrams of cater are: ['caret', 'crate', 'react', 'recta', 'trace']
+Anagrams of crate are: ['caret', 'cater', 'react', 'recta', 'trace']
+Anagrams of react are: ['caret', 'cater', 'crate', 'recta', 'trace']
+Anagrams of trace are: ['caret', 'cater', 'crate', 'react', 'recta']
+
+Here are the words from your file that have no anagrams:
+['beyond', 'boat', 'lawn']
+
+Say you are interested if there is a word in your file that has exactly k anagrams
+Enter an integer for k: 2
+Here is a word (words) in your file with exactly 2 anagrams:
+['acre', 'care', 'list', 'race', 'silt', 'slit']
+>>> wordbook[:50]
+['a', 'aardvark', 'abaci', 'aback', 'abacus', 'abaft', 'abalone', 'abandon', 'abandoned', 'abandonment', 'abase', 'abasement', 'abash', 'abashed', 'abashedly', 'abashment', 'abate', 'abatement', 'abattoir', 'abbe', 'abbess', 'abbey', 'abbot', 'abbreviate', 'abbreviated', 'abbreviation', 'abdicate', 'abdication', 'abdomen', 'abdominal', 'abduct', 'abduction', 'abductor', 'abeam', 'abed', 'aberrant', 'aberration', 'aberrational', 'abet', 'abetter', 'abettor', 'abeyance', 'abhor', 'abhorrence', 'abhorrent', 'abhorrently', 'abidance', 'abide', 'abiding', 'abidingly']
+>>> l
+['able', 'acre', 'bale', 'beyond', 'binary', 'boat', 'brainy', 'care',
+'cat', 'cater', 'crate', 'lawn', 'list', 'race', 'react', 'sheet',
+'silt', 'slit', 'trace']
+
+
+
+RUN 2
+
+
+>>> 
+Would you like to:
+1. Analize anagrams in a text -- given in a file
+2. Get small help for Scrabble game
+Enter any character other than 1 or 2 to exit: 
+1
+Enter the name of the file: smallish.txt
+
+Of all the words in your file, the following words have the most anagrams:
+['time']
+
+Here are their anagrams:
+Anagrams of time are: ['emit', 'item', 'mite']
+
+Here are the words from your file that have no anagrams:
+['', 'a', 'all', 'asap', 'australias', 'barrier', 'by', 'change', 'climate', 'corals', 'decline', 'decrease', 'driven', 'due', 'emissions', 'found', 'greenhouse', 'had', 'half', 'is', 'more', 'of', 'researchers', 'scientists', 'seas', 'sharply', 'since', 'suffered', 'than', 'the', 'to', 'types', 'we']
+
+Say you are interested if there is a word in your file that has exactly k anagrams
+Enter an integer for k: 1
+Here is a word (words) in your file with exactly 1 anagrams:
+['coral', 'gas', 'great', 'has', 'its', 'must', 'no', 'reef', 'said', 'study', 'warmer']
+>>> l
+['', 'a', 'all', 'asap', 'australias', 'barrier', 'by', 'change', 'climate', 'coral', 'corals', 'decline', 'decrease', 'driven', 'due', 'emissions', 'found', 'gas', 'great', 'greenhouse', 'had', 'half', 'has', 'is', 'its', 'lose', 'lost', 'more', 'must', 'no', 'of', 'reef', 'researchers', 'said', 'scientists', 'seas', 'sharply', 'since', 'study', 'suffered', 'than', 'the', 'there', 'time', 'to', 'types', 'warmer', 'we']
+
+
+RUN 3 (scrabble)
+
+
+
+Would you like to:
+1. Analize anagrams in a text -- given in a file
+2. Get small help for Scrabble game
+Enter any character other than 1 or 2 to exit: 
+2
+Enter the letters that you have, one after another with no space:    nice day   
+Error: You entered space(s).
+Enter the letters that you have, one after another with no space:       ufff
+Error: You entered space(s).
+Enter the letters that you have, one after another with no space: vidad
+Would you like help forming a word with 
+1. all these letters
+2. all but one of these letters?
+1
+There is no word comprised of exactly these letters.
+
+RUN 4 (scrabble)
+
+Would you like to:
+1. Analize anagrams in a text -- given in a file
+2. Get small help for Scrabble game
+Enter any character other than 1 or 2 to exit: 
+2
+Enter the letters that you have, one after another with no space: vidad
+Would you like help forming a word with 
+1. all these letters
+2. all but one of these letters?
+2
+The letters you gave us are: vidad
+Let's see what we can get if we ommit one of these letters.
+Without the letter in position 1 we have letters idad
+There is no word comprised of letters: idad
+Without the letter in position 2 we have letters vdad
+There is no word comprised of letters: vdad
+Without the letter in position 3 we have letters viad
+Here are the words that are comprised of letters: viad
+['avid', 'diva']
+Without the letter in position 4 we have letters vidd
+There is no word comprised of letters: vidd
+Without the letter in position 5 we have letters vida
+Here are the words that are comprised of letters: vida
+['avid', 'diva']
+
+RUN 5 (scrabble)
+
+Would you like to:
+1. Analize anagrams in a text -- given in a file
+2. Get small help for Scrabble game
+Enter any character other than 1 or 2 to exit: 
+2
+Enter the letters that you have, one after another with no space: today
+Would you like help forming a word with 
+1. all these letters
+2. all but one of these letters?
+1
+Here are the words that are comprised of exactly these letters:
+['toady', 'today']
+
+RUN 6 (scrabble)
+
+Would you like to:
+1. Analize anagrams in a text -- given in a file
+2. Get small help for Scrabble game
+Enter any character other than 1 or 2 to exit: 
+2
+Enter the letters that you have, one after another with no space: dayto
+Would you like help forming a word with 
+1. all these letters
+2. all but one of these letters?
+1
+Here are the words that are comprised of exactly these letters:
+['toady', 'today']
+
+RUN 7 (scrabble)
+
+Would you like to:
+1. Analize anagrams in a text -- given in a file
+2. Get small help for Scrabble game
+Enter any character other than 1 or 2 to exit: 
+2
+Enter the letters that you have, one after another with no space: 12345
+Would you like help forming a word with 
+1. all these letters
+2. all but one of these letters?
+1
+There is no word comprised of exactly these letters.
+>>>
+
+
+RUN 8 - some function funs from part 1
+
+
+
+Would you like to:
+1. Analize anagrams in a text -- given in a file
+2. Get small help for Scrabble game
+Enter any character other than 1 or 2 to exit: 
+1
+Enter the name of the file: small
+There is no file with that name. Try again.
+Enter the name of the file: 1
+There is no file with that name. Try again.
+Enter the name of the file: small.txt
+
+Of all the words in your file, the following words have the most anagrams:
+['cater', 'crate', 'react', 'trace']
+
+Here are their anagrams:
+Anagrams of cater are: ['caret', 'crate', 'react', 'recta', 'trace']
+Anagrams of crate are: ['caret', 'cater', 'react', 'recta', 'trace']
+Anagrams of react are: ['caret', 'cater', 'crate', 'recta', 'trace']
+Anagrams of trace are: ['caret', 'cater', 'crate', 'react', 'recta']
+
+Here are the words from your file that have no anagrams:
+['beyond', 'boat', 'lawn']
+
+Say you are interested if there is a word in your file that has exactly k anagrams
+Enter an integer for k: 1
+Here is a word (words) in your file with exactly 1 anagrams:
+['able', 'bale', 'binary', 'brainy', 'cat', 'sheet']
+>>>
+>>>
+>>> wordbook[10000 : 10010]
+['disembodiment', 'disembody', 'disembowel', 'disembowelment', 'disenchant', 'disenchanted', 'disenchantment', 'disencumber', 'disenfranchise', 'disenfranchised']
+>>> l
+['able', 'acre', 'bale', 'beyond', 'binary', 'boat', 'brainy', 'care',
+'cat', 'cater', 'crate', 'lawn', 'list', 'race', 'react', 'sheet',
+'silt', 'slit', 'trace']
+>>>
+>>> test_letters("listen", "enlist")
+True
+>>> test_letters("eekn", "knee")
+True
+>>> test_letters("teen", "need")
+False
+>>>
+>>> create_clean_sorted_nodupicates_list("Anti-viral drug remdesivir has little to no effect on Covid patients' chances of survival, a study from the World Health Organization (WHO) has found.")
+['a', 'antiviral', 'chances', 'covid', 'drug', 'effect', 'found', 'from', 'has', 'health', 'little', 'no', 'of', 'on', 'organization', 'patients', 'remdesivir', 'study', 'survival', 'the', 'to', 'who', 'world']
+>>>
+>>> word_anagrams("bla", wordbook)
+['alb', 'lab']
+>>>
+>>> count_anagrams(l, wordbook)
+[1, 2, 1, 0, 1, 0, 1, 2, 1, 5, 5, 0, 2, 2, 5, 1, 2, 2, 5]
+>>>
+>>> anagcount
+[1, 2, 1, 0, 1, 0, 1, 2, 1, 5, 5, 0, 2, 2, 5, 1, 2, 2, 5]
+>>>
+>>> l
+['able', 'acre', 'bale', 'beyond', 'binary', 'boat', 'brainy', 'care', 'cat', 'cater', 'crate', 'lawn', 'list', 'race', 'react', 'sheet', 'silt', 'slit', 'trace']
+>>>
+>>> k_anagram(l, anagcount, 2)
+['acre', 'care', 'list', 'race', 'silt', 'slit']
+>>>
+>>> max_anagram(l, anagcount)
+['cater', 'crate', 'react', 'trace']
+>>>
+>>> zero_anagram(l, anagcount)
+['beyond', 'boat', 'lawn']
