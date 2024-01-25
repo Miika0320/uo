@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Biblios Group 7</string>
+    <string name="save">Save</string>
+    <string name="enter_house_number">Enter House Number</string>
+    <string name="enter_country">Enter Country</string>
+    <string name="enter_state_province_or_region">Enter State, Province or Region</string>
+    <string name="enter_zip_or_postal_code">Enter Zip or Postal code</string>
+    <string name="enter_city">Enter City</string>
+    <string name="enter_street_name">Enter Street Name</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+</resources>
